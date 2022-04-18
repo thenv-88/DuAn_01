@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div th:fragment="menu">
+    <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+            data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+            <li class="nav-item has-treeview menu-open">
+                <a href="#" class="nav-link active">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <p>
+                        ADMIN
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a th:href="@{/admin/user/list/1}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>USER</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/admin/role/list/1}" class="nav-link" >
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>ROLE</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="nav-item has-treeview menu-open">
+                <a href="#" class="nav-link active">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <p>
+                        Quản lý sinh viên
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+
+                    <li class="nav-item">
+                        <a th:href="@{/admin/khoa/list/1}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Khoa</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a th:href="@{/admin/lop/list/1}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Lớp</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/admin/monhoc/list/1}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Môn học</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/admin/baithi/list/1}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Bài thi</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/admin/sinhvien/list/1}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Sinh viên</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+</body>
+</html>

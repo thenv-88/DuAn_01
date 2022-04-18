@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <meta name="_csrf" content="${_csrf.token}"/>
+    <!-- default header name is X-CSRF-TOKEN -->
+    <meta name="_csrf_header" content="${_csrf.headerName}"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" th:href="@{/plugins/fontawesome-free/css/all.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/plugins/jqvmap/jqvmap.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/dist/css/adminlte.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/plugins/overlayScrollbars/css/OverlayScrollbars.min.css}">
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700}">
+    <link rel="stylesheet" type="text/css" th:href="@{/select2/select2.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/validate/validate.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+</head>
+<body>
+</body>
+</html>
